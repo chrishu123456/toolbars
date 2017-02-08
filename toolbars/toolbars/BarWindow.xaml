@@ -8,12 +8,18 @@
         Title="Toolbars" Height="350" Width="525">
     <DockPanel>
         <Menu Name="Menu" Height="24" DockPanel.Dock="Top">
+            <MenuItem Header="Editeren">
+                <MenuItem Header="Knippen" Command="Cut"></MenuItem>
+                <MenuItem Header="Plakken" Command="Paste"></MenuItem>
+                <MenuItem Header="Kopieren" Command="Copy"></MenuItem>
+            </MenuItem>
             <MenuItem Name="Lettertype" Header="Lettertype">
                 <MenuItem Name="Font" Header="Font">
                     <MenuItem Name="CourierNew" Header="Courier New" IsCheckable="True" Click="Lettertype_Click" ></MenuItem>
                     <MenuItem Name="Arial" Header="Arial" IsCheckable="True" Click="Lettertype_Click"></MenuItem>
+                    <MenuItem Name="Comic" Header="Comic" IsCheckable="True" Click="Lettertype_Click"></MenuItem>
                 </MenuItem>
-                <MenuItem Name="Vet" Header="Vet" IsCheckable="True" Click="Vet_Click"></MenuItem>
+                <MenuItem Name="Vet" Header="Vet" IsCheckable="True" Click="Vet_Click" ></MenuItem>
                 <MenuItem Name="Schuin" Header="Schuin" IsCheckable="true" Click="Schuin_Click"></MenuItem>
             </MenuItem>
            
